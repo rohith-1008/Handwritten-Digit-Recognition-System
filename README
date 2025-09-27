@@ -1,19 +1,50 @@
-Create a virtual env. Install packages: pip install -r requirements.txt.
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&center=true&vCenter=true&color=00FFAA&width=700&lines=🖊+Handwritten+Digit+Recognition+System;Train+CNN+on+MNIST+🧠;Predict+Digits+with+GUI+%F0%9F%96%8D;Made+with+TensorFlow+%7C+Keras+%7C+OpenCV" alt="Typing Animation" />
+</h1>
 
-Run training: python train_model.py.
+---
 
-This will download MNIST, train a CNN, and save mnist_cnn.h5.
+## ⚙️ Setup Instructions  
 
-Run GUI: python gui_predict.py.
+```bash
+# 1️⃣ Create Virtual Environment
+python -m venv venv
+source venv/bin/activate   # (Linux/Mac)
+venv\Scripts\activate      # (Windows)
 
-Draw a digit using the mouse.
+# 2️⃣ Install Dependencies
+pip install -r requirements.txt
 
-Press Predict to see the model output.
+🏋️‍♂️ Training the Model
+python train_model.py
 
-Notes and improvements
+✅ Downloads MNIST dataset
+✅ Trains a CNN model
+✅ Saves model as mnist_cnn.h5
 
-Use more epochs or data augmentation for better accuracy.
+🖥 Run the GUI
+python gui_predict.py
 
-To support webcam input, capture a frame with OpenCV, convert to grayscale, resize to 28x28, then predict.
+🖌 Draw a digit with mouse
+🔮 Press Predict → see the model output instantly
 
-You can export the model to SavedModel format or convert to TensorFlow Lite for mobile.
+📌 Notes & Improvements
+
+✨ Train with more epochs for better accuracy
+✨ Add data augmentation to improve generalization
+✨ Use OpenCV webcam input:
+
+Capture frame → Grayscale → Resize (28×28) → Predict
+
+✨ Export model:
+
+. TensorFlow SavedModel
+. TensorFlow Lite (TFLite) for mobile deployment
+
+📊 Demo
+<p align="center"> <img src="https://github.com/rohith-1008/Handwritten-Digit-Recognition-System/blob/main/demo.gif" width="500px" alt="Demo Animation"> </p>
+
+📈 GitHub Stats
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=rohith-1008&repo=Handwritten-Digit-Recognition-System&theme=tokyonight" /> </p> <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=rohith-1008&show_icons=true&theme=tokyonight" height="150"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=rohith-1008&theme=tokyonight" height="150"/> </p>
+
+<h2 align="center">🚀 Made with ❤️ by Rohith</h2> ```
